@@ -8,7 +8,10 @@ insert([{
 }], function(db, done) {
 	var cursor = db.a.find();
 	cursor.explain(function(err, result) {
-		assert.equal(result.nscannedObjects, 2);
+		// mongodb 2.x:
+		// assert.equal(result.nscannedObjects, 2);
+		// mongodb 3.x:
+		assert.equal(result.executionStats.nReturned, 2);
 		done();
 	});
 });
