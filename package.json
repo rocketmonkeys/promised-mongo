@@ -1,6 +1,6 @@
 {
   "name": "promised-mongo",
-  "description": "Easy to use module that implements the mongo api and supports promises",
+  "description": "Easy to use module that implements the mongo api and supports promises.  Forked from git://github.com/gordonmleigh/promised-mongo.git.",
   "keywords": [
     "mongo",
     "db",
@@ -8,9 +8,9 @@
     "promise",
     "q"
   ],
-  "version": "0.11.5",
-  "repository": "git://github.com/gordonmleigh/promised-mongo.git",
-  "author": "Gordon Mackenzie-Leigh <gordon@stugo.co.uk>",
+  "version": "0.11.6",
+  "repository": "git://github.com/rocketmonkeys/promised-mongo.git",
+  "author": "James Yoneda <virtue@rocketmonkeys.com>",
   "contributors": [
     "Gordon Mackenzie-Leigh <gordon@stugo.co.uk>",
     "Mathias Buus Madsen <mathiasbuus@gmail.com>",
@@ -25,11 +25,12 @@
     "Bjarke Walling",
     "Tobias Baunbæk",
     "Benedikt Arnold",
-    "Kevin McTigue"
+    "Kevin McTigue",
+    "James Yoneda"
   ],
   "dependencies": {
     "readable-stream": "~1.1.8",
-    "mongodb": "1.4.0",
+    "mongodb": "^1.4.30",
     "q": "~0.9.7"
   },
   "scripts": {
